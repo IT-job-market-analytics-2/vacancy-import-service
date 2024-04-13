@@ -5,8 +5,8 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class VacanciesDto {
-    private List<VacancyDto> vacancies;
+public class Vacancies {
+    private List<Vacancy> vacancies;
     private Integer found;
     private Integer pages;
     private Integer perPage;

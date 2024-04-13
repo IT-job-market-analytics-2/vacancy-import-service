@@ -2,22 +2,20 @@ package dev.lxqtpr.linda.vacancyimportservice.dto;
 
 import lombok.Data;
 
-import java.awt.geom.Area;
-
 @Data
-public class VacancyDto {
+public class Vacancy {
     private String id;
     private String name;
     private Area area;
-    private SalaryDto salary;
-    private TypeDto type;
+    private Salary salary;
+    private Type type;
     private Object responseUrl;
     private String publishedAt;
     private String createdAt;
     private Boolean archived;
     private String alternateUrl;
-    private EmployerDto employer;
-    private SnippetDto snippet;
-    private ExperienceDto experience;
-    private EmploymentDto employment;
+    private Employer employer;
+    private Snippet snippet;
+    private Experience experience;
+    private Employment employment;
 }

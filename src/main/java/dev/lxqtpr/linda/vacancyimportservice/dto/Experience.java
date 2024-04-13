@@ -3,7 +3,7 @@ package dev.lxqtpr.linda.vacancyimportservice.dto;
 import lombok.Data;
 
 @Data
-public class ExperienceDto {
+public class Experience {
     private String id;
     private String name;
 }
