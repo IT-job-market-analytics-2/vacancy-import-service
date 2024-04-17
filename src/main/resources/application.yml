@@ -1,1 +1,13 @@
-spring.application.name=vacancy-import-service
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: analytics_service
+    password: password
+
+rabbitmq:
+  vacancies_queue: imported-vacancies-queue
+  vacancy_import_scheduled_tasks_queue: vacancy-import-scheduled-tasks-queue
+
+hh:
+  url: https://api.hh.ru/vacancies
