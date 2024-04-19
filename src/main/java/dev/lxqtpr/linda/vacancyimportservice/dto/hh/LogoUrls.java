@@ -1,4 +1,4 @@
-package dev.lxqtpr.linda.vacancyimportservice.dto;
+package dev.lxqtpr.linda.vacancyimportservice.dto.hh;
 
 import lombok.Data;
 
