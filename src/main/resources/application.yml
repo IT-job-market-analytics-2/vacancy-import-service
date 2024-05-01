@@ -11,3 +11,6 @@ rabbitmq:
 
 hh:
   url: https://api.hh.ru/vacancies
+
+rate-limiter:
+  url: http://localhost:8080/quota/hh-api
