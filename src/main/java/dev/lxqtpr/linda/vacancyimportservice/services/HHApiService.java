@@ -36,7 +36,10 @@ public class HHApiService {
             log.debug("Returned vacancies count: " + vacancies.getVacancies().size());
 
             log.debug("Publishing to the queue");
-            vacancies.getVacancies().forEach(producerService::publishVacancy);
+            vacancies.getVacancies().forEach(vacancy -> {
+                vacancy.setQuery(query.getQuery());
+                producerService.publishVacancy(vacancy);
+            });
 
             log.info("Query handled successfully");
         }
