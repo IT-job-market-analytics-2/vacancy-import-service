@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/rest-api-service:${{ env.BRANCH_NAME }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/vacancy-import-service:${{ env.BRANCH_NAME }}
