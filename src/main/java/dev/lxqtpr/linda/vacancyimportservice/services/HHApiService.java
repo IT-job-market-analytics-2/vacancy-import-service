@@ -57,7 +57,7 @@ public class HHApiService {
     public Vacancies requestToApi(VacancyImportScheduledTaskDto query) {
         var textQuery  = "NAME:(%s)".formatted(query.getQuery());
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url)
-                .queryParam("page", query.getPageNumber())
+                .queryParam("page", query.getPageIndex())
                 .queryParam("per_page", query.getPageSize())
                 .queryParam("text", textQuery);
 
