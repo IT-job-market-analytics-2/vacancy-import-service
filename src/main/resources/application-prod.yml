@@ -1,0 +1,8 @@
+spring:
+  rabbitmq:
+    host: rabbitmq
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
+
+rate-limiter:
+  url: http://rate-limiter:8080/quota/hh-api
