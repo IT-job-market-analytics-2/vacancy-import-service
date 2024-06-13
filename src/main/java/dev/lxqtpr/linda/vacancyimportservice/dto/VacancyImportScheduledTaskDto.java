@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class VacancyImportScheduledTaskDto {
-    private Integer pageSize;
-    private Integer pageNumber;
+    private int pageSize;
+    private int pageIndex;
     private String query;
 }
